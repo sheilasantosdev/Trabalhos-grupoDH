@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../aula16/registro.css" />
+    <link rel="icon" href="" />
+    <title>Aula 16 - Compras online</title>
+  </head>
+
+  <body>
+    <div id="desconto">
+      <h3>20% de desconto em todos os produtos!</h3>
+    </div>
+
+    <header>
+        <img src="./img/loja.png" alt="logo">
+      <h1>eCommerce</h1>
+    </header>
+
+    <main>
+      <form action="/home" method="GET">
+          <h2>Registro</h2>
+        
+          <input type="text" placeholder="Nome e Sobrenome" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Senha" />
+          <select name="países" id="paises">
+            <option value="País" selected="País">País</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Canadá">Canadá</option>
+            <option value="Chile">Chile</option>
+            <option value="México">México</option>
+        </select>
+
+        <div class="buttons">
+          <button class="button1" type="submit">Limpar</button>
+          <button class="button2" type="submit">Registrar</button>
+        </div>
+
+        <div>
+          <h3>Já possui uma conta? <a href="">Entrar</a></h3>
+        </div>
+       </form>
+    </main>
+
+    <footer>
+      <h3>Todos os direitos reservados à Mesa 01.</h3>
+    </footer>
+  </body>
+</html>
