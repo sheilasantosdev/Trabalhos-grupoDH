@@ -38,6 +38,10 @@ header h1 {
   margin-left: 25px;
 }
 
+header img {
+  padding: 5px;
+}
+
 main {
   height: 428px;
   display: flex;

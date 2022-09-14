@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Aula 17</title>
+    <link rel="shortcut icon" href="img/superhero.png" type="image/x-icon">
+    <title>Crie seu heroi</title>
 </head>
+
 <body>
-    
+    <div id="desconto">
+        <h3>20% de desconto em todos os produtos!</h3>
+    </div>
+    <header>
+        <img src="img/loja.png" alt="imgloja">
+        <h1>eCommerce</h1>
+    </header>
+    <main>
+        <div class="containner">
+            <h2>Adicionar seu super-herói</h2>
+            <p>Adicione seu personagem favorito completando as informações</p>
+            <form action="" class="formulario" method="post">
+                <label for="nome" class="titulo">*Nome</label>
+                <input type="text" class="input-pagina" name="nome" required="" id="nome">
+                <label for="nascimento" class="titulo">Data de Nascimento</label>
+                <input type="date" class="input-pagina" value="" name="nascimento" id="nascimento" required="">
+                <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10"></textarea>
+                <label for="especie" class="titulo">*Espécie</label>
+                <select name="especie" class="input-pagina" id="especie">
+                    <option value="Humano" selected="">Humano</option>
+                    <option value="Alien">Alien</option>
+                    <option value="deus">deus</option>
+                    <option value="Semideus">Semideus</option>
+                </select>
+                <label for="file" class="file-page">Adicionar Foto
+                    <input type="file" class="input-file" id="file" value="file">
+                </label>
+                <div>
+                <div class="poderes">
+                    <legend>Poderes</legend>
+                    <label for="voar">
+                        <input type="checkbox" name="voar">Voar</label>
+                    <label for="inteligência">
+                        <input type="checkbox" name="inteligência">Super Inteligência</label>
+                    <label for="laser">
+                        <input type="checkbox" name="laser">Visão Raio Laser</label>
+                    <label for="rico">
+                        <input type="checkbox" name="Bilionario">Bilionario</label>
+                </div>
+                <div class="poderes">
+                    <legend>Tipo de personagem</legend>
+                    <input id="hero" type="radio" name="tipe" value="radio-button">
+                    <label for="hero">Herói / Heroína</label>
+                    <input id="vilan" type="radio" name="tipe" value="radio-button">
+                    <label for="vilan">Vilão / Vilã</label>
+                </div>
+            </div>
+            </form>
+            <div class="button">
+                <button type="submit" class="submit">Adicionar</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
